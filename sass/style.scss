@@ -41,7 +41,21 @@ button {
 }
 
 p {
-	font-size: 30px;
+	font-size: 250%;
 	color: royalblue;
 	font-weight: bold;
+}
+
+img {
+	height: 40vh;
+   // z-index: -1;
+    margin: auto;
+}
+
+.hot {
+	color: red;
+}
+
+.cold {
+	color: royalblue;
 }

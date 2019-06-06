@@ -21,9 +21,9 @@ var tempFahrToCels = function (temperature) {
 
 var info = function (temperature) {
 	if (temperature > 100) {
-		return '<strong>W tej temperaturze woda przyjmuje stan pary wodnej</strong><br>';
+		return '<strong class="hot">W tej temperaturze woda przyjmuje stan pary wodnej</strong><br>';
 	} else if (temperature < 0) {
-		return '<strong>W tej temperaturze woda zmienia się w lód</strong><br>';
+		return '<strong class="cold">W tej temperaturze woda zmienia się w lód</strong><br>';
 	} else {
 		return '';
 	}
@@ -40,7 +40,7 @@ button.addEventListener('click', function () {
 		log('Podano złą wartość! Wpisz liczbę! <br><br>');
 	} else {
 		newFahr = tempCelsToFahr(cels);
-		log('Temperatura w stopniach Celsjusza to: ' + cels + '! <br><br> Natomiast w stopniach Fahrenheita to: ' + newFahr + '<br><br>');
+		log('Temperatura w stopniach <strong>Celsjusza</strong> to: <strong>' + cels + '</strong> ! <br><br> Natomiast w stopniach <strong>Fahrenheita</strong> to: <strong>' + newFahr + '</strong> !<br><br>');
 		log(info(cels));
 	}
 });
@@ -56,7 +56,7 @@ buttonv2.addEventListener('click', function () {
 		log('Podano złą wartość! Wpisz liczbę!' + '<br><br>');
 	} else {
 		newCels = tempFahrToCels(fahr);
-		log('Temperatura w stopniach Fahrenheita to: ' + fahr + '! <br><br> Natomiast w stopniach Celsjusza to: ' + newCels + '<br>');
+		log('Temperatura w stopniach <strong>Fahrenheita</strong> to: <strong>' + fahr + '</strong> ! <br><br> Natomiast w stopniach <strong>Celsjusza</strong> to: <strong>' + newCels + '</strong> !<br>');
 		log(info(newCels));
 	}
 });
