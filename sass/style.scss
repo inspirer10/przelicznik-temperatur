@@ -6,38 +6,30 @@ body {
 }
 
 button {
-	display: inline-block;
-	padding: 15px 50px;
-	max-width: 100%;
-
-	font-size: 18px;
-	font-weight: 600;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-
-	color: #fff;
-	background-color: royalblue;
-	border: 2px solid royalblue;
-	border-radius: 10px;
-
-	transition: color .4s, background-color .4s;
-
-	cursor: pointer;
-	outline: 0 !important;
-	text-decoration: none;
 	touch-action: manipulation;
-	user-select: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+
+	margin: 4px 2px;
+	padding: 15px 35px;
+	min-width: 160px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .5s;
+	background-size: 240%;
+
+	background-position: 100% 0;
+	background-image: linear-gradient(135deg, transparent 50%, royalblue 50%);
+	color: white;
+	border: 2px solid royalblue;
 
 	&:hover,
 	&:active {
+		background-position: 0 100%;
+		background-color: white;
 		color: royalblue;
-		background-color: #fff;
 	}
-}
-
-.fahr {
-	margin-top: 30px;
 }
 
 p {
@@ -47,9 +39,19 @@ p {
 }
 
 img {
-	height: 40vh;
-   // z-index: -1;
-    margin: auto;
+	height: 35vh;
+	margin: auto;
+}
+
+footer {
+	font-size: 11px;
+	position: fixed;
+	right: 1%;
+	bottom: 1%;
+}
+
+.fahr {
+	margin-top: 35px;
 }
 
 .hot {
@@ -58,4 +60,19 @@ img {
 
 .cold {
 	color: royalblue;
+}
+
+@media (max-width: 768px) {
+
+	p {
+		font-size: 220%;
+	}
+
+	button {
+		font-size: 23px;
+	}
+
+	img {
+		height: 27vh;
+	}
 }
