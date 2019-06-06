@@ -1,8 +1,11 @@
 body {
+  margin: 0;
   padding: 20px;
   text-align: center;
   background: whitesmoke;
   font-family: 'Open Sans', sans-serif;
+  position: relative;
+  height: auto;
 }
 
 button {
@@ -37,19 +40,19 @@ p {
 }
 
 img {
-  height: 35vh;
-  margin: auto;
+  height: 40vh;
+  margin: 5% auto;
 }
 
 footer {
-  font-size: 11px;
-  position: fixed;
+  font-size: 10px;
+  position: absolute;
   right: 1%;
   bottom: 1%;
 }
 
 .fahr {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .hot {
