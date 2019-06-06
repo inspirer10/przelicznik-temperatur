@@ -1,7 +1,8 @@
 body {
 	padding: 20px;
 	text-align: center;
-	background: #fdffdb;
+	background: whitesmoke;
+	font-family: 'Open Sans', sans-serif;
 }
 
 button {
@@ -16,9 +17,9 @@ button {
 	vertical-align: middle;
 
 	color: #fff;
-	background-color: #02ac46;
-	border: 2px solid #02ac46;
-	border-radius: 4px;
+	background-color: royalblue;
+	border: 2px solid royalblue;
+	border-radius: 10px;
 
 	transition: color .4s, background-color .4s;
 
@@ -30,7 +31,7 @@ button {
 
 	&:hover,
 	&:active {
-		color: #02ac46;
+		color: royalblue;
 		background-color: #fff;
 	}
 }
@@ -40,7 +41,7 @@ button {
 }
 
 p {
-	font-size: 25px;
-	color: #02ac46;
+	font-size: 30px;
+	color: royalblue;
 	font-weight: bold;
 }
