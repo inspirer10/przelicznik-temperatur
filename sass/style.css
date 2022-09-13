@@ -2,13 +2,19 @@ body {
   margin: 0;
   padding: 20px;
   text-align: center;
-  background: whitesmoke;
+  background: #1e1e1e;
   font-family: 'Open Sans', sans-serif;
   position: relative;
   height: auto;
+  color: #fff;
 }
 
 button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   display: inline-block;
@@ -16,10 +22,11 @@ button {
   font-weight: bold;
   margin: 4px 2px;
   padding: 15px 35px;
-  min-width: 160px;
-  border-radius: 10px;
+  min-width: 25vw;
+  border-radius: 5px;
   cursor: pointer;
-  transition: .5s;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
   background-size: 240%;
   background-position: 100% 0;
   background-image: linear-gradient(135deg, transparent 50%, royalblue 50%);
@@ -34,21 +41,23 @@ button:hover, button:active {
 }
 
 p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-size: 250%;
   color: royalblue;
   font-weight: bold;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 img {
   height: 40vh;
   margin: 5% auto;
-}
-
-footer {
-  font-size: 10px;
-  position: absolute;
-  right: 1%;
-  bottom: 1%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .fahr {
@@ -65,7 +74,7 @@ footer {
 
 @media (max-width: 768px) {
   p {
-    font-size: 220%;
+    font-size: 200%;
   }
   button {
     font-size: 23px;
