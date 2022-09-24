@@ -45,7 +45,7 @@ button.addEventListener('click', function () {
             'Temperatura w stopniach <strong>Celsjusza</strong> to: <strong>' +
                 cels +
                 '</strong> ! <br><br> Natomiast w stopniach <strong>Fahrenheita</strong> to: <strong>' +
-                newFahr +
+                newFahr.toFixed(1) +
                 '</strong> !<br>'
         );
         log(info(cels));
@@ -66,7 +66,7 @@ buttonv2.addEventListener('click', function () {
             'Temperatura w stopniach <strong>Fahrenheita</strong> to: <strong>' +
                 fahr +
                 '</strong> ! <br><br> Natomiast w stopniach <strong>Celsjusza</strong> to: <strong>' +
-                newCels +
+                newCels.toFixed(1) +
                 '</strong> !<br>'
         );
         log(info(newCels));

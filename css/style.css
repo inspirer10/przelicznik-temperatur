@@ -1,0 +1,19 @@
+body { margin: 0; padding: 20px; text-align: center; background: #1e1e1e; font-family: 'Open Sans', sans-serif; position: relative; height: auto; color: #fff; }
+
+button { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; outline: none; -ms-touch-action: manipulation; touch-action: manipulation; display: inline-block; font-size: 20px; font-weight: bold; margin: 4px 2px; padding: 15px 35px; min-width: 25vw; border-radius: 5px; cursor: pointer; transition: .25s ease; background-size: 240%; background-position: 100% 0; background-image: linear-gradient(135deg, transparent 50%, royalblue 50%); color: white; border: 2px solid royalblue; }
+
+button:hover, button:active { background-position: 0 100%; background-color: white; color: royalblue; }
+
+p { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 250%; color: royalblue; font-weight: bold; text-shadow: 1px 1px 2px #fff; }
+
+img { height: 40vh; margin: 5% auto; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.fahr { margin-top: 40px; }
+
+.hot { color: red; }
+
+.cold { color: royalblue; }
+
+@media (max-width: 768px) { p { font-size: 200%; }
+  button { font-size: 23px; }
+  img { height: 27vh; } }
